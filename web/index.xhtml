@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <h:head>
+        <title>Livraria Espírita</title>
+    </h:head>
+
+    <h:body>
+        <h:form>
+            <h:panelGrid columns="2">
+                Título: <h:inputText value="#{livroBean.livro.titulo}" />
+                Autor: <h:inputText value="#{livroBean.livro.autor}" />
+                Espírito: <h:inputText value="#{livroBean.livro.espirito}" />
+                Tradutor: <h:inputText value="#{livroBean.livro.tradutor}" />
+                Editora: <h:inputText value="#{livroBean.livro.editora}" />
+                Edição: <h:inputText value="#{livroBean.livro.anoEdicao}" />
+                ISBN: <h:inputText value="#{livroBean.livro.isbn}" />
+
+                <h:commandButton value="Salvar" action="#{livroBean.salva(livroBean.livro)}"/>
+
+            </h:panelGrid>
+        </h:form>
+        <br />
+    </h:body>
+
+</html>
